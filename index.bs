@@ -36,9 +36,6 @@ spec: mediastream-recording; urlPrefix: https://www.w3.org/TR/mediastream-record
     type:interface
         text: MediaRecorder; url: mediarecorder
 
-spec: mimesniff; urlPrefix: https://mimesniff.spec.whatwg.org/#
-    type: dfn; text: valid mime type; url: valid-mime-type
-
 spec: encrypted-media; for: EME; urlPrefix: https://www.w3.org/TR/encrypted-media/#
     type: attribute
         text: keySystem; url: dom-mediakeysystemaccess-keysystem
@@ -281,14 +278,8 @@ spec: encrypted-media-draft; for: EME; urlPrefix: https://w3c.github.io/encrypte
     <section>
       <h4 id='mime-type'>MIME types</h4>
 
-      <p>
-        In the context of this specification, a MIME type is also called content
-        type. A <dfn>valid media MIME type</dfn> is a string that is a <a>valid
-        MIME type</a> per [[mimesniff]].
-      </p>
-
-      <p>
-        Please note that the definition of MIME subtypes and parameters is
+      <p class="note">
+        Definition of MIME subtypes and parameters is
         context dependent. For {{file}}, {{media-source}}, and {{record}}, the
         MIME types are specified as defined for [[#http|HTTP]], whereas for
         {{MediaDecodingType/webrtc}} the MIME types are specified as
@@ -296,15 +287,11 @@ spec: encrypted-media-draft; for: EME; urlPrefix: https://w3c.github.io/encrypte
       </p>
 
       <p>
-        A <dfn>valid audio MIME type</dfn> is a string that is a <a>valid media
-        MIME type</a> and for which the <code>type</code> per [[RFC9110]] is
-        either <code>audio</code> or <code>application</code>.
+        A <dfn>valid audio MIME type</dfn> is a [=valid mime type string=] whose [=MIME type/type=] is either <code>audio</code> or <code>application</code>.
       </p>
 
       <p>
-        A <dfn>valid video MIME type</dfn> is a string that is a <a>valid media
-        MIME type</a> and for which the <code>type</code> per [[RFC9110]] is
-        either <code>video</code> or <code>application</code>.
+        A <dfn>valid video MIME type</dfn> is a [=valid mime type string=] whose [=MIME type/type=] is either <code>video</code> or <code>application</code>.
       </p>
 
       <section>
@@ -351,7 +338,7 @@ spec: encrypted-media-draft; for: EME; urlPrefix: https://w3c.github.io/encrypte
 
       <p>
         The <dfn for='VideoConfiguration' dict-member>contentType</dfn> member
-        represents the MIME type of the video track.
+        represents the [=MIME type=] of the video track.
       </p>
 
       <p>
@@ -595,7 +582,7 @@ spec: encrypted-media-draft; for: EME; urlPrefix: https://w3c.github.io/encrypte
 
       <p>
         The <dfn for='AudioConfiguration' dict-member>contentType</dfn> member
-        represents the MIME type of the audio track.
+        represents the [=MIME type=] of the audio track.
       </p>
 
       <p>
