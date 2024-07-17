@@ -287,11 +287,13 @@ spec: encrypted-media-draft; for: EME; urlPrefix: https://w3c.github.io/encrypte
       </p>
 
       <p>
-        A <dfn>valid audio MIME type</dfn> is a [=valid mime type string=] whose [=MIME type/type=] is either <code>audio</code> or <code>application</code>.
+        A <dfn>valid audio MIME type</dfn> is a [=valid mime type string=] whose
+        [=MIME type/type=] is either <code>audio</code> or <code>application</code>.
       </p>
 
       <p>
-        A <dfn>valid video MIME type</dfn> is a [=valid mime type string=] whose [=MIME type/type=] is either <code>video</code> or <code>application</code>.
+        A <dfn>valid video MIME type</dfn> is a [=valid mime type string=] whose
+        [=MIME type/type=] is either <code>video</code> or <code>application</code>.
       </p>
 
       <section>
